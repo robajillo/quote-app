@@ -1,3 +1,4 @@
+import { Quote } from './../quote';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit(): void {
+    throw new Error("Method not implemented.");
   }
-
+  quotes:Quote[] = [
+    {author:'roba', quote:'Watch finding Nemo'},
+    {author:'roba', quote:'in understanding be men'}
+  ];
 }
