@@ -1,6 +1,6 @@
 import { QuoteComponent } from './quote/quote.component';
 import { Component } from '@angular/core';
-
+import {Quote} from './quote'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
