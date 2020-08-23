@@ -7,7 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormComponent } from './form/form.component';
 import { QuoteComponent } from './quote/quote.component';
 import { DetailsComponent } from './details/details.component';
-
+import { FormsModule } from '@angular/forms';
+import { VoteComponent } from './vote/vote.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,11 +16,13 @@ import { DetailsComponent } from './details/details.component';
     FormComponent,
     QuoteComponent,
     DetailsComponent,
+    VoteComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

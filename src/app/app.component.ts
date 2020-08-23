@@ -1,4 +1,4 @@
-import { QuoteComponent } from './quote/quote.component';
+
 import { Component } from '@angular/core';
 
 @Component({
