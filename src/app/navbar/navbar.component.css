@@ -26,14 +26,4 @@ nav {
     color: #00b334;
     border: none;
   }
-  .card {
-    width: 300px;
-    height: 450px;
-    overflow: hidden;
-    margin: 15px;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s;
-    cursor: pointer;
-  }
+  

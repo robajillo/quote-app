@@ -1,6 +1,6 @@
-import { Quote } from './../quote';
-import { Component, OnInit } from '@angular/core';
 
+import { Component, OnInit } from '@angular/core';
+import {Quote} from './../quote'
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -10,8 +10,5 @@ export class QuoteComponent implements OnInit {
   ngOnInit(): void {
     throw new Error("Method not implemented.");
   }
-  quotes:Quote[] = [
-    {author:'roba', quote:'Watch finding Nemo'},
-    {author:'roba', quote:'in understanding be men'}
-  ];
+
 }
