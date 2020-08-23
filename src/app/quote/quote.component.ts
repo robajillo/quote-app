@@ -5,7 +5,7 @@ import { Quote } from '../quote';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.scss']
+  styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
   quotes = [
@@ -13,23 +13,34 @@ export class QuoteComponent implements OnInit {
     new Quote("Life", "Albert Einsten", "A person who never made a mistake never tried anything new"),
     new Quote("Life", "Unknown", "In understanding be men")
   ]
-  previousNo: number
-  lastNo: number
-  token: number
-
   addQuote(chosenQuote) {
     this.quotes.push(chosenQuote)
   }
 
   upvote(i) {
-    this.quotes[i].upvotes + 1
+    this.quotes[i].upvotes ++;
   }
   downvote(i) {
-    this.quotes[i].downvotes + 1
+    this.quotes[i].downvotes  ++;
   }
   delQuote(i) {
     this.quotes.splice(i, 1)
   }
+  preNum:number
+  lastNum:number
+  counter:number
+
+  highestUpvote(){
+    this.preNum = 0
+    this.lastNum = 0
+
+    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
+      this.lastNum = this.quotes[this.counter].upvotes;
+      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    }
+    return  this.preNum
+  }
+
 
 
 constructor() { }
