@@ -22,7 +22,7 @@ An application that enables users to add quotes,delete quotes.You can also be ab
 
 #### Link to deployed page:
 
-< https://robajillo.github.io/quote-app/>
+https://robajillo.github.io/quote-app/
 
 ## Technologies used
 
