@@ -9,6 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { VoteComponent } from './vote/vote.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +18,9 @@ import { VoteComponent } from './vote/vote.component';
     QuoteComponent,
     DetailsComponent,
     VoteComponent,
-    
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

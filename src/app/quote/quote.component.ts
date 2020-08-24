@@ -9,26 +9,21 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes = [
     new Quote(
+      3,
       'Life',
       'Abraham Lincon',
       'character is like a tree and reputation like a shadow.The shadow is what we think of it'
     ),
     new Quote(
+      2,
       'Life',
       'Albert Einsten',
       'A person who never made a mistake never tried anything new'
     ),
-    new Quote('Life', 'Unknown', 'In understanding be men'),
+    new Quote(1, 'Life', 'Unknown', 'In understanding be men'),
   ];
   addQuote(chosenQuote) {
     this.quotes.push(chosenQuote);
-  }
-
-  upvote(i) {
-    this.quotes[i].upvotes++;
-  }
-  downvote(i) {
-    this.quotes[i].downvotes++;
   }
   delQuote(i) {
     this.quotes.splice(i, 1);

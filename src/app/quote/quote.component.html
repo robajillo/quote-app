@@ -16,14 +16,13 @@
           >
             {{ quote.quote }}
           </p>
-          <app-details [quote]="quote"></app-details>
-          <button class="col btn btn-success" (click)="upVote()">
-            {{ uvotes }}<i class="fa fa-thumbs-up"></i>
-          </button>
-          <button class="col btn btn-danger" (click)="downVote()">
-            {{ dvotes }}<i class="fa fa-thumbs-down"></i>
-          </button>
-          <button class="btn btn-danger" (click)="delQuote(quote.index)">
+          <app-details
+            [quote]="quote"
+            (isComplete)="deleteQuote($event, 1)"
+          ></app-details>
+          <app-vote></app-vote>
+
+          <button class="btn btn-danger" (click)="delQuote(i)">
             <i class="fa fa-trash"></i>
           </button>
         </div>

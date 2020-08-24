@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -7,7 +7,12 @@ import { Quote } from '../quote';
   styleUrls: ['./vote.component.css'],
 })
 export class VoteComponent implements OnInit {
-  @Output() isComplete = new EventEmitter<boolean>();
+  @Input() quote: Quote;
+  @Output() isComplete = new EventEmitter<boolean>(); //transmits to the delete trigger from parent component on delete function
+
+  quoteDelete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
 
   uvotes = 0;
   dvotes = 0;
