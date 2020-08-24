@@ -1,27 +1,41 @@
-# QuoteApp
+### Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
-## Development server
+#### Project name
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+quote-app
 
-## Code scaffolding
+#### Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
 
-## Build
+#### Setup/Installation requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Clone or download and unzip the repository from github, [https://github.com/robajillo/quote-app-/](https://github.com/robajillo/quote-app-.git).
+- If you have git Use this command `git clone *` to clone the project.
+- Run ng serve from your terminal
 
-## Running unit tests
+- Internet connection
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular and node installations
 
-## Running end-to-end tests
+#### Link to deployed page:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+< https://robajillo.github.io/quote-app/>
 
-## Further help
+## Technologies used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Angular
+- HTML
+- CSS
+- Bootstrap.
+- javascript
+- Typescript
+- Markdown
+
+## License and terms of use
+
+MIT License this application's source code is free for any open source projects
+
+©Roba Jillo 2020 | Moringa School
